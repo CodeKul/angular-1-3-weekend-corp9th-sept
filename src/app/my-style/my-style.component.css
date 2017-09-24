@@ -1,0 +1,7 @@
+:host ::ng-deep h1{
+     border: 1px solid green;
+} 
+
+/* :host >>> h1{
+     border: 1px solid green;
+} */

@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Interpolation</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3> Hey I have {{carNm}} </h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3> Hey I have {{carNm.toUpperCase()}} </h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3> 10 square is {{ 10 * 10 }} </h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Property Binding</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="{{ipTyp}}" value="codekul.com">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="ipTyp" value="codekul.com">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="'button'" value="codekul.com">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Event Binding</h1>
+  </div>
+</div>
+<div class="row" [style.border]="'1px solid red'">
+  <div class="col-md-12">
+    <input type="button" (click)="chDt()"   value="Okay" class="btn btn-info"> {{dt | date}}
+  </div>
+</div>
+<div class="row" [class.card]="isCard">
+  <div class="col-md-12">
+    <input type="button" (click)="isCard = !isCard"  value="Add Card" class="btn btn-info"> 
+  </div>
+</div>
+<div class="row" [class.card]="isCard">
+  <div class="col-md-12" [style.border]="brd">
+    <input type="text" [(ngModel)]="brd">  
+  </div>
+</div>
