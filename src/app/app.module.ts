@@ -8,6 +8,8 @@ import { InnerSampleComponent } from './sample/inner-sample.component';
 import { MyStyleComponent } from './my-style/my-style.component';
 import { InStyleComponent } from './my-style/in-style.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { RatingBarComponent } from './databinding/rating-bar/rating-bar.component';
+import { RatingInfoComponent } from './databinding/rating-info/rating-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DatabindingComponent } from './databinding/databinding.component';
     InnerSampleComponent,
     MyStyleComponent,
     InStyleComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    RatingBarComponent,
+    RatingInfoComponent
   ],
   imports: [
     BrowserModule,

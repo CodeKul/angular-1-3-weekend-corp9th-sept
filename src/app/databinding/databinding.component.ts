@@ -10,6 +10,7 @@ export class DatabindingComponent {
   carNm: string;
   ipTyp = 'text';
   dt: string;
+  cnt: number;
 
   constructor() {
     this.carNm = 'Mercedes';

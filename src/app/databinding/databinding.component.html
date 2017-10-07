@@ -45,16 +45,22 @@
 </div>
 <div class="row" [style.border]="'1px solid red'">
   <div class="col-md-12">
-    <input type="button" (click)="chDt()"   value="Okay" class="btn btn-info"> {{dt | date}}
+    <input type="button" (click)="chDt()" value="Okay" class="btn btn-info"> {{dt | date}}
   </div>
 </div>
 <div class="row" [class.card]="isCard">
   <div class="col-md-12">
-    <input type="button" (click)="isCard = !isCard"  value="Add Card" class="btn btn-info"> 
+    <input type="button" (click)="isCard = !isCard" value="Add Card" class="btn btn-info">
   </div>
 </div>
 <div class="row" [class.card]="isCard">
   <div class="col-md-12" [style.border]="brd">
-    <input type="text" [(ngModel)]="brd">  
+    <input type="text" [(ngModel)]="brd">
   </div>
 </div>
+<app-rating-bar 
+  [heartColor]="'green'" 
+  (heartClick)="cnt = $event">
+</app-rating-bar>
+
+<app-rating-info [count]="cnt"></app-rating-info>
