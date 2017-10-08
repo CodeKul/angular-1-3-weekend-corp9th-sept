@@ -1,3 +1,5 @@
 <div class="container">
-  <app-databinding></app-databinding>
+  <app-lifecycle [defCls]="'btn btn-primary'" *ngIf="isVs"></app-lifecycle>
+
+  <input type="button" class="btn" (click)="isVs = !isVs" value="Okay" />
 </div>

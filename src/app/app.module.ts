@@ -10,6 +10,10 @@ import { InStyleComponent } from './my-style/in-style.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { RatingBarComponent } from './databinding/rating-bar/rating-bar.component';
 import { RatingInfoComponent } from './databinding/rating-info/rating-info.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
+import { InnerContentComponent } from './content-projection/inner-content.component';
+import { LocalRefsComponent } from './local-refs/local-refs.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { RatingInfoComponent } from './databinding/rating-info/rating-info.compo
     InStyleComponent,
     DatabindingComponent,
     RatingBarComponent,
-    RatingInfoComponent
+    RatingInfoComponent,
+    ContentProjectionComponent,
+    InnerContentComponent,
+    LocalRefsComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
