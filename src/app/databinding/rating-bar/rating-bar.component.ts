@@ -9,10 +9,10 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 export class RatingBarComponent implements OnInit {
 
   @Input()
-  heartColor: string;
+  private heartColor: string;
 
   @Output()
-  heartClick: EventEmitter<number>;
+  private heartClick: EventEmitter<number>;
 
   constructor() {
     this.heartClick = new EventEmitter();

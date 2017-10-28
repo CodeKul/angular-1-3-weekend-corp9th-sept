@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Ng2TableModule } from 'ng2-table/ng2-table';
 
 import { AppComponent } from './app.component';
 import { SampleComponent } from './sample/sample.component';
@@ -14,6 +15,10 @@ import { ContentProjectionComponent } from './content-projection/content-project
 import { InnerContentComponent } from './content-projection/inner-content.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { ThirdPartyComponent } from './third-party/third-party.component';
+import { AttrDirComponent } from './directives/attr-dir.component';
+import { ResizerDirective } from './directives/resizer.directive';
 
 @NgModule({
   declarations: [
@@ -28,11 +33,16 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     ContentProjectionComponent,
     InnerContentComponent,
     LocalRefsComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    DirectivesComponent,
+    ThirdPartyComponent,
+    AttrDirComponent,
+    ResizerDirective
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    Ng2TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
