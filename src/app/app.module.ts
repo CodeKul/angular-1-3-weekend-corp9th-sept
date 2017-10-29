@@ -19,6 +19,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { ThirdPartyComponent } from './third-party/third-party.component';
 import { AttrDirComponent } from './directives/attr-dir.component';
 import { ResizerDirective } from './directives/resizer.directive';
+import { StrDirComponent } from './directives/str-dir.component';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ResizerDirective } from './directives/resizer.directive';
     DirectivesComponent,
     ThirdPartyComponent,
     AttrDirComponent,
-    ResizerDirective
+    ResizerDirective,
+    StrDirComponent,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2, HostListener, HostBinding } from '@angular/core';
+import { Directive, ElementRef, Renderer2, HostListener, HostBinding, Input } from '@angular/core';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
@@ -7,6 +7,7 @@ import { Directive, ElementRef, Renderer2, HostListener, HostBinding } from '@an
 export class ResizerDirective {
 
   @HostBinding('style.width')
+  @Input()
   txtWd: string;
 
   @HostListener(`mouseenter`)

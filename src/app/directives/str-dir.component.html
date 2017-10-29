@@ -1,0 +1,52 @@
+<div class="row" *ngIf="isSh; else somethingEls">
+  <div class="col-md-12">
+    <h1> Strutural Directive </h1>
+  </div>
+</div>
+<ng-template #somethingEls>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>This is something else</h1>
+    </div>
+  </div>
+</ng-template>
+<div class="row" template="ngIf !isSh">
+  <div class="col-md-12">
+    <h1>Stage 1: Without star and using template attribute </h1>
+  </div>
+</div>
+<ng-template [ngIf]="isSh">
+  <div class="row">
+    <div class="col-md-12">
+      <h1> Stage 2: inside ng-template </h1>
+    </div>
+  </div>
+</ng-template>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="okay" (click)="isSh = !isSh">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let mob of mobiles; let ind = index;">{{mob.nm}} -> {{mob.pz}}k -> {{ind}}</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row" *unless="isSh">
+  <div class="col-md-12">
+    <span [ngSwitch]="day">
+      <p *ngSwitchCase="1">
+    SUN
+   </p>
+   <p *ngSwitchCase="2">
+    MON
+   </p>
+   <p *ngSwitchDefault>
+    No Day
+   </p>
+   </span>
+  </div>
+</div>
